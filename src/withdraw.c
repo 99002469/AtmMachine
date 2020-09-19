@@ -3,8 +3,8 @@ int withdraw_cash()
 {
     extern int cash_deb;
     extern int withdraw_limit = 5000;/*This is for one time with drawl*/
-    extern int funds_avl = 100000; /*Considered an hypothetical case that there are only 100 rupee notes in the ATM*/
-    extern int notes_avl = 1000;
+    volatile extern int funds_avl = 100000; /*Considered an hypothetical case that there are only 100 rupee notes in the ATM*/
+    volatile extern int notes_avl = 1000;
    printf("Please Enter the amount in multiples of 100\n");
    scanf("%d",&cash_deb);
    if(cash_deb<=withdraw_limit&&amount&&funds_avl)
