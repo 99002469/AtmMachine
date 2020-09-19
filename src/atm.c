@@ -35,7 +35,7 @@ void pin_check()
              break;
         case 5:
              printf("Thank You for using our service:\n");
-             return 0;
+             break;
         default:
             printf("You have entered INVALID NUMBER..\n");
 
